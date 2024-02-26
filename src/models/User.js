@@ -22,7 +22,7 @@ const User = sequelize.define('user', {
     },
     
     birthday: {
-        type: DataTypes.DATE
+        type: DataTypes.DATEONLY
     }
 
 });
