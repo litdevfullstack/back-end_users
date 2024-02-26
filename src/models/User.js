@@ -25,7 +25,6 @@ const User = sequelize.define('user', {
         type: DataTypes.DATE
     }
 
-
 });
 
 module.exports = User;
