@@ -19,7 +19,8 @@ const createUser = catchError(async (req, res) => {
 });
 
 const getOneUser = catchError(async (req, res) => {
-    const user = await User.findByPk(1)
+    const { id } = req.params
+    const user = await User.findByPk({id})
     return res.json(user)
 });
 
